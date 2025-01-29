@@ -1,4 +1,54 @@
 baseURL: https://example.org/
-languageCode: en-us
 title: My New Hugo Site
+copyright: "© [朱睿安 / Zhu Ruian / Ryan Zhu](https://github.com/Mr-Rain)"
 theme: ["PaperMod"]
+
+defaultContentLanguage: zh
+defaultContentLanguageInSubdir: true
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+
+minify:
+  disableXML: true
+  # minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  
+languages:
+  zh:
+    languageName: "中文"
+    weight: 1
+    title: "Ryan的博客"
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - identifier: archives
+          name: "归档"
+          url: /archives/
+          weight: 10
+        - identifier: about
+          name: "关于"
+          url: /about/
+          weight: 20
+    params:
+      profileMode:
+        enabled: true
+        title: "我的博客"
+        subtitle: "分享技术与生活"
+
+params:
+  env: production
+  description: "Ryan's Personal Blog - Sharing Technology and Life"
+  author: "朱睿安 / Zhu Ruian / Ryan Zhu"
