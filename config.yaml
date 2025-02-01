@@ -34,9 +34,9 @@ languages:
       series: series
     menu:
       main:
-        - identifier: archives
-          name: "归档"
-          url: /archives/
+        - identifier: blog
+          name: "博客"
+          url: /posts
           weight: 10
         - identifier: about
           name: "关于"
@@ -52,3 +52,5 @@ params:
   env: production
   description: "Ryan's Personal Blog - Sharing Technology and Life"
   author: "朱睿安 / Zhu Ruian / Ryan Zhu"
+
+  ShowBreadCrumbs: true
